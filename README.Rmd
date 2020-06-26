@@ -23,6 +23,8 @@ The following functions are implemented:
 hrbrpkghelpr::describe_ingredients()
 ```
 
+- `slugify`: Slugify a string
+
 ## Installation
 
 ```{r install-ex, results='asis', echo=FALSE, cache=FALSE}

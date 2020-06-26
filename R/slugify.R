@@ -1,4 +1,4 @@
-#' Slugif a string
+#' Slugify a string
 #'
 #' @param x string
 #' @param replacement replace spaces with replacement character, defaults to `-`
