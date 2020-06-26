@@ -1,0 +1,4 @@
+npm install slugify
+echo "global.slugify = require('slugify');" > in.js
+browserify in.js -o bundle.js
+#webpack --mode="production" in.js -o bundle.js

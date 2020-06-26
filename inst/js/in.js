@@ -1,0 +1,1 @@
+global.slugify = require('slugify');

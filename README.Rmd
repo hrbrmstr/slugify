@@ -39,6 +39,10 @@ packageVersion("slugify")
 
 ```
 
+```{r ex-01}
+slugify("R is great!")
+```
+
 ## slugify Metrics
 
 ```{r cloc, echo=FALSE}

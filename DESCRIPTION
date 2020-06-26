@@ -1,6 +1,6 @@
 Package: slugify
 Type: Package
-Title: slugify title goes here otherwise CRAN checks fail
+Title: Create slug strings for SEO
 Version: 0.1.0
 Date: 2020-06-26
 Authors@R: c(
@@ -8,17 +8,17 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: Most blogging platforms turn title phrases into slugs
+    for better SEO. Tools are provided to turn phrases into slugs.
 URL: https://git.rud.is/hrbrmstr/slugify
 BugReports: https://git.rud.is/hrbrmstr/slugify/issues
 Encoding: UTF-8
-License: AGPL
+License: MIT + file LICENSE
 Suggests: 
     covr, tinytest
 Depends: 
-    R (>= 3.5.0)
+    R (>= 3.6.0)
 Imports: 
-    httr,
-    jsonlite
+    V8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0

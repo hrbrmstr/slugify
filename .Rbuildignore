@@ -19,3 +19,7 @@
 ^CRAN-RELEASE$
 ^appveyor\.yml$
 ^tools$
+^LICENSE\.md$
+^bld$
+^node_modules^
+^package-lock\\.json$
