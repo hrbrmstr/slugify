@@ -43,6 +43,10 @@ packageVersion("slugify")
 
 ```{r ex-01}
 slugify("R is great!")
+
+slugify("R is great!", replacement = "@@")
+
+slugify("R is great!", remove = "/[Rr]/g")
 ```
 
 ## slugify Metrics

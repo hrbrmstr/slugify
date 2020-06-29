@@ -53,20 +53,28 @@ library(slugify)
 
 # current version
 packageVersion("slugify")
-## [1] '0.1.0'
+## [1] '0.1.1'
 ```
 
 ``` r
 slugify("R is great!")
 ## [1] "r-is-great"
+
+slugify("R is great!", replacement = "@@")
+## [1] "r@@is@@great"
+
+slugify("R is great!", remove = "/[Rr]/g")
+## [1] "is-geat"
 ```
 
 ## slugify Metrics
 
 | Lang | \# Files | (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | --: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |        4 | 0.8 |  33 | 0.79 |          13 | 0.43 |       20 | 0.39 |
-| Rmd  |        1 | 0.2 |   9 | 0.21 |          17 | 0.57 |       31 | 0.61 |
+| R    |        4 | 0.8 |  33 | 0.75 |          15 | 0.44 |       25 | 0.45 |
+| Rmd  |        1 | 0.2 |  11 | 0.25 |          19 | 0.56 |       31 | 0.55 |
+
+clock Package Metrics for slugify
 
 ## Code of Conduct
 

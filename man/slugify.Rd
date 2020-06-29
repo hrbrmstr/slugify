@@ -13,7 +13,10 @@ slugify(x, replacement = "-", remove = NULL, lower = TRUE, strict = TRUE)
 
 \item{replacement}{replace spaces with replacement character, defaults to \code{-}}
 
-\item{remove}{remove characters that match this regex, defaults to \code{NULL} (no deleting)}
+\item{remove}{remove characters that match this JavaScript regex, defaults to \code{NULL} (no deleting).
+This should be a \href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions}{JavaScript bare regex}
+including the \verb{//} and any modifiers. e.g. to remove all R's (upper and lower) from a slug you should
+specify \verb{remove = "/[rR]/g}.}
 
 \item{lower}{convert to lower case, defaults to \code{TRUE}}
 
@@ -24,7 +27,9 @@ Most blogging platforms turn title phrases into slugs
 for better SEO. Tools are provided to turn phrases into slugs.
 }
 \examples{
-slugify("R is great!")
+slugify("R is great!") # "r-is-great"
+slugify("R is great!", replacement = "@") # "r@is@great"
+slugify("R is great!", remove = "/[Rr]/g") # "is-geat"
 }
 \seealso{
 Useful links:
