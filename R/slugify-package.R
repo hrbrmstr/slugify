@@ -7,5 +7,7 @@
 #' @name slugify
 #' @keywords internal
 #' @author Bob Rudis (bob@@rud.is)
+#' @import stringi
 #' @import V8
 "_PACKAGE"
+

@@ -42,12 +42,27 @@ packageVersion("slugify")
 ```
 
 ```{r ex-01}
-slugify("R is great!")
+slugify("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
 
-slugify("R is great!", replacement = "@@")
+slugify("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET", replacement = "@")
 
 slugify("R is great!", remove = "/[Rr]/g")
 ```
+
+```{r ex-02}
+slugify_native("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
+
+slugify_native("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET", repl = "@")
+```
+
+```{r bench}
+microbenchmark::microbenchmark(
+  slugify_native("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET"),
+  slugify("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET"),
+  control = list(warmup = 10)
+)
+```
+
 
 ## slugify Metrics
 
