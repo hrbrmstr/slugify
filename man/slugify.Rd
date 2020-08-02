@@ -4,7 +4,7 @@
 \name{slugify}
 \alias{slugify}
 \alias{slugify-package}
-\title{Create slug strings for SEO}
+\title{Create Slug Strings for SEO}
 \usage{
 slugify(x, replacement = "-", remove = NULL, lower = TRUE, strict = TRUE)
 }

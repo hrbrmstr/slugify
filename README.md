@@ -5,7 +5,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![Signed
 by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/hrbrmstr)
 ![Signed commit
-%](https://img.shields.io/badge/Signed_Commits-100%25-lightgrey.svg)
+%](https://img.shields.io/badge/Signed_Commits-88%25-lightgrey.svg)
 [![Linux build
 Status](https://travis-ci.org/hrbrmstr/slugify.svg?branch=master)](https://travis-ci.org/hrbrmstr/slugify)  
 ![Minimal R
@@ -14,7 +14,7 @@ Version](https://img.shields.io/badge/R%3E%3D-3.6.0-blue.svg)
 
 # slugify
 
-Create slug strings for SEO
+Create Slug Strings for SEO
 
 ## Description
 
@@ -24,8 +24,6 @@ Tools are provided to turn phrases into slugs.
 ## What’s Inside The Tin
 
 The following functions are implemented:
-
-  - `slugify_fast`: Much faster string slugifier
 
   - `slugify_native`: Native R slugify (with the help of stringi)
 
@@ -89,17 +87,17 @@ microbenchmark::microbenchmark(
 ##                                                                                                                         expr
 ##  slugify_native("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
 ##         slugify("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
-##      min      lq     mean   median      uq      max neval
-##  402.524 446.394 519.0379 476.3795 561.544  880.638   100
-##  499.746 539.201 690.6867 571.3005 760.809 2282.490   100
+##      min       lq     mean   median       uq      max neval
+##  402.661 423.4725 448.0902 444.4745 465.0420  573.784   100
+##  474.337 512.2340 557.9481 536.2560 565.6155 1380.351   100
 ```
 
 ## slugify Metrics
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |        6 | 0.86 | 131 | 0.88 |          25 | 0.52 |       43 | 0.55 |
-| Rmd  |        1 | 0.14 |  18 | 0.12 |          23 | 0.48 |       35 | 0.45 |
+| R    |        6 | 0.86 | 130 | 0.88 |          25 | 0.52 |       32 | 0.48 |
+| Rmd  |        1 | 0.14 |  18 | 0.12 |          23 | 0.48 |       35 | 0.52 |
 
 clock Package Metrics for slugify
 
