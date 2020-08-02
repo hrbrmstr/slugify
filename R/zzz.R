@@ -1,4 +1,5 @@
-slugify_charmap <- c(`$` = "dollar", `%` = "percent", `&` = "and", `<` = "less",
+slugify_charmap <- c(
+  `$` = "dollar", `%` = "percent", `&` = "and", `<` = "less",
   `>` = "greater", `|` = "or", `¢` = "cent", `£` = "pound", `¤` = "currency",
   `¥` = "yen", `©` = "(c)", ª = "a", `®` = "(r)", º = "o",
   À = "A", Á = "A", Â = "A", Ã = "A", Ä = "A", Å = "A", Æ = "AE",

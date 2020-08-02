@@ -1,4 +1,4 @@
-#' Create slug strings for SEO
+#' Create Slug Strings for SEO
 #'
 #' Most blogging platforms turn title phrases into slugs
 #' for better SEO. Tools are provided to turn phrases into slugs.
