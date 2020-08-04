@@ -5,7 +5,8 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![Signed
 by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/hrbrmstr)
 ![Signed commit
-%](https://img.shields.io/badge/Signed_Commits-88%25-lightgrey.svg)
+%](https://img.shields.io/badge/Signed_Commits-89%25-lightgrey.svg)
+[![R-CMD-check](https://github.com/hrbrmstr/slugify/workflows/R-CMD-check/badge.svg)](https://github.com/hrbrmstr/slugify/actions?query=workflow%3AR-CMD-check)
 [![Linux build
 Status](https://travis-ci.org/hrbrmstr/slugify.svg?branch=master)](https://travis-ci.org/hrbrmstr/slugify)  
 ![Minimal R
@@ -88,8 +89,8 @@ microbenchmark::microbenchmark(
 ##  slugify_native("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
 ##         slugify("New Package — {cdccovidview} — To Work with the U.S. CDC’s New COVID-19 Trackers: COVIDView and COVID-NET")
 ##      min       lq     mean   median       uq      max neval
-##  402.661 423.4725 448.0902 444.4745 465.0420  573.784   100
-##  474.337 512.2340 557.9481 536.2560 565.6155 1380.351   100
+##  294.659 310.4540 376.8535 326.3330 375.5105 1446.752   100
+##  274.091 302.8215 439.2495 336.0975 476.3755 1314.823   100
 ```
 
 ## slugify Metrics
