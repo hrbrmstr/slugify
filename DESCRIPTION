@@ -13,7 +13,6 @@ Description: Most blogging platforms turn title phrases into slugs
 URL: https://git.rud.is/hrbrmstr/slugify
 BugReports: https://git.rud.is/hrbrmstr/slugify/issues
 Encoding: UTF-8
-SystemRequirements: C++11
 License: MIT + file LICENSE
 Suggests: 
     covr, tinytest
