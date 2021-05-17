@@ -20,7 +20,6 @@ Suggests:
 Depends: 
     R (>= 3.6.0)
 Imports: 
-    V8,
     stringi
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
